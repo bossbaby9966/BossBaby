@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比比誰更高</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- 主菜單 -->
+        <div id="mainMenu" class="menu">
+            <h1>比比誰更高</h1>
+            <div id="highScore">最高分：0</div>
+            <div id="totalCoins">金幣: 0</div>
+            <button id="startButton">開始遊戲</button>
+            <button id="shopButton">商城</button>
+        </div>
+
+        <!-- 商城界面 -->
+        <div id="shopMenu" class="menu" style="display: none;">
+            <h2>角色商城</h2>
+            <div id="skinContainer" class="skin-container">
+                <!-- 角色會通過JS動態添加 -->
+            </div>
+            <button id="backButton">返回</button>
+        </div>
+
+        <!-- 遊戲界面 -->
+        <div id="gameUI" style="display: none;">
+            <canvas id="gameCanvas"></canvas>
+            <div id="score">分數：0</div>
+            <div id="instructions">按住空格鍵跳躍，A/D鍵移動</div>
+            <button id="returnButton" class="return-button" style="display: none;">返回主頁</button>
+            <button id="restartButton" class="restart-button" style="display: none;">再來一次</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
